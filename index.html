@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048-B</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://blockchain.info//Resources/wallet/pay-now-button.js"></script>
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048 - Bitcoin</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the numbers and get to the <strong>Bitcoin tile!</strong></p>
+      <p></p>
+      <a class="restart-button">New Game</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Keep going</a>
+          <a class="retry-button">Try again</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+    </p>
+    <hr>
+    <p>
+    
+    </p>
+ 
+    <p>
+    Re-imaged by <a href="http://www.bruins-tech.co.uk" target="_blank">Ethan Bruins</a> Based on <a href="http://gabrielecirulli.github.io/2048/" target="_blank">2048 by Gabrielle Circulli</a>
+    </p>
+	<hr>
+	<p>
+	<div style="font-size:16px;margin:0 auto;width:300px" class="blockchain-btn"
+     data-address="15gnL3tPy6RqCc9jzF7Twf5Ava2Fk167nW"
+     data-shared="false">
+    <div class="blockchain stage-begin">
+        <img src="https://blockchain.info//Resources/buttons/donate_64.png"/>
+    </div>
+    <div class="blockchain stage-loading" style="text-align:center">
+        <img src="https://blockchain.info//Resources/loading-large.gif"/>
+    </div>
+    <div class="blockchain stage-ready">
+         <p align="center">Please Donate To Bitcoin Address: <b>[[address]]</b></p>
+         <p align="center" class="qr-code"></p>
+    </div>
+    <div class="blockchain stage-paid">
+         Donation of <b>[[value]] BTC</b> Received. Thank You.
+    </div>
+    <div class="blockchain stage-error">
+        <font color="red">[[error]]</font>
+    </div>
+</div>
+	</p>
+    <hr>
+    <div>
+    <p>
+    Coins included in this game (in order of appearance):
+    <ul><a href="http://slothcoin.org/">Slothcoin</a></ul>
+    <ul><a href="http://devcoin.org/">Devcoin</a></ul>
+    <ul><a href="http://mintcoin.cc/">Mintcoin</a></ul>
+    <ul><a href="http://primecoin.io/">Primecoin</a></ul>
+    <ul><a href="http://www.worldcoinalliance.net/">Worldcoin</a></ul>
+    <ul><a href="http://digitalcoin.co/">Digitalcoin</a></ul>
+    <ul><a href="http://dogecoin.com/">Dogecoin</a></ul>
+    <ul><a href="http://namecoin.info/">Namecoin</a></ul>
+    <ul><a href="http://www.peercoin.net/">Peercoin</a></ul>
+    <ul><a href="https://litecoin.org/">Litecoin</a></ul>
+    <ul><a href="https://bitcoin.org/en/">Bitcoin</a></ul>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
